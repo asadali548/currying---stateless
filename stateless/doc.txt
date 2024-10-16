@@ -1,3 +1,19 @@
 stateless :
 here i took Draz app for  as stateless example
 Statelessness in Daraz: Daraz uses a stateless architecture, which means the server does not remember user information between requests. Every time a user sends a request  all necessary information  is sent with the request. This way, the server doesn't need to store or recall user information from previous interactions, making each request independent.
+
+How Statelessness Works:
+
+API Requests: Every time a user performs an action, their request contains authentication tokens or cookies that identify them.
+To Balancing load on server: This setup makes load balancing easy because any server can handle any request without needing to know about past user activity.
+
+Authentication in Daraz:
+
+Login Process: Users log in with their credentials (username/password). The server generates a unique token . when the login is successful.
+Token Storage: The token is stored . 
+Token Verification: The server verifies the token with each request. If valid, the user gets access to the requested resource or service.
+Authorization in Daraz:
+
+Assigned  Role : Users are assigned roles (e.g., buyer, seller, admin), and each role has specific permissions.
+Resource Access: When a user tries to access a resource, the server checks their role and token. If their role allows access, the resource is provided.
+Secure Endpoints: API endpoints have authorization checks to ensure that only authorized users can access them.
