@@ -1,0 +1,3 @@
+stateless :
+here i took Draz app for  as stateless example
+Statelessness in Daraz: Daraz uses a stateless architecture, which means the server does not remember user information between requests. Every time a user sends a request  all necessary information  is sent with the request. This way, the server doesn't need to store or recall user information from previous interactions, making each request independent.
